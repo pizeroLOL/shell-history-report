@@ -48,3 +48,15 @@ impl ShellHistory for Bash {
         self.home.join(".bash_history")
     }
 }
+
+#[cfg(test)]
+mod test{
+    use crate::ShellHistory;
+
+    use super::Bash;
+
+    #[test]
+    fn test_bash_history() {
+        Bash::new().get_history().unwrap();
+    }
+}

@@ -50,3 +50,15 @@ impl ShellHistory for ZSH {
         self.home.join(".zsh_history")
     }
 }
+
+#[cfg(test)]
+mod test{
+    use crate::ShellHistory;
+
+    use super::ZSH;
+
+    #[test]
+    fn test_bash_history() {
+        ZSH::new().get_history().unwrap();
+    }
+}
