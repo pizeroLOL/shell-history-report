@@ -6,9 +6,9 @@ use std::{
     path::{Path, PathBuf},
 };
 
-use crate::{find_cmd, ShellHistoryOutput, ShellHistory};
+use crate::{find_cmd, ShellHistory, ShellHistoryOutput};
 
-#[derive(Debug,Clone,Default)]
+#[derive(Debug, Clone, Default)]
 pub struct Bash {
     home: PathBuf,
 }

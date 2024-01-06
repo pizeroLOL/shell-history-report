@@ -1,5 +1,5 @@
 [package]
-name = "history-report"
+name = "shell-history-report"
 version = "0.1.0"
 edition = "2021"
 

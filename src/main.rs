@@ -1,6 +1,6 @@
 use std::{collections::HashMap, io::ErrorKind};
 
-use history_report::{
+use shell_history_report::{
     shells::{bash::Bash, zsh::ZSH},
     ShellHistory, ShellHistoryOutput,
 };
@@ -33,7 +33,7 @@ fn main() {
         .enumerate()
         .for_each(|(index, (shell, count))| println!("{shell:16}  {:<8}  {count}", index + 1));
     println!("=========================================");
-    let total = shells.iter().map(|(_,count)| count).sum::<usize>();
+    let total = shells.iter().map(|(_, count)| count).sum::<usize>();
     let space = "";
     let text = "Total";
     println!("{text:16}  {space:8}  {total}");
