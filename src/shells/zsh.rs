@@ -52,7 +52,7 @@ impl ShellHistory for ZSH {
 }
 
 #[cfg(test)]
-mod test{
+mod test {
     use crate::ShellHistory;
 
     use super::ZSH;

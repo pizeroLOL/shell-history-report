@@ -50,7 +50,7 @@ impl ShellHistory for Bash {
 }
 
 #[cfg(test)]
-mod test{
+mod test {
     use crate::ShellHistory;
 
     use super::Bash;
